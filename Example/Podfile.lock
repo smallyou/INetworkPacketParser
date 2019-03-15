@@ -1,0 +1,16 @@
+PODS:
+  - INetworkPacketParser (0.1.0)
+
+DEPENDENCIES:
+  - INetworkPacketParser (from `../`)
+
+EXTERNAL SOURCES:
+  INetworkPacketParser:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  INetworkPacketParser: 193acd7b1d7153fd336433e5f193490296a90778
+
+PODFILE CHECKSUM: 4677fede7293b5ebdbc4194b5805f9e0311f4335
+
+COCOAPODS: 1.6.0.beta.2

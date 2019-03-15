@@ -1,0 +1,818 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		04F7B47D24B112EB695FF9A6D5838BAB /* Pods-INetworkPacketParser_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9E3D4F2BE60CCF093AFE59C668664F5 /* Pods-INetworkPacketParser_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		133CB0320758DB4BE8FD98E3ECF79845 /* IPDNSMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 801B0EE0C8FAABC06664FEEE56CBAFCA /* IPDNSMessage.m */; };
+		1DBFB2B2DB0CC5A7CB66A2501E0D853A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		2803E3B37E89116BF8429312634A4578 /* IPDNSProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = F744FD82A209E9C1ABE1A5D13E051AC8 /* IPDNSProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B2D5D1868E8BC734B831594F92D4360 /* IPTCPSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E4BCD71201027660BA19C72C6AB61F0 /* IPTCPSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		38E185C9E520A532AD7F5C4FB11068BE /* IPConstant.m in Sources */ = {isa = PBXBuildFile; fileRef = 2D4C207B133F31EA21624BA740A44982 /* IPConstant.m */; };
+		3C71D5737D8360EE58C75213A54C1426 /* IPTCPSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = 0D2033CE8C4613599673326C7A592172 /* IPTCPSegment.m */; };
+		3D1A7A70D98EE0DCEB25DAAC51DDAFC2 /* Pods-INetworkPacketParser_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 845822CD8FA232023B4BFE0478F23312 /* Pods-INetworkPacketParser_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3F4A9C8682725C54CAC0157293D751D4 /* IPConstant.h in Headers */ = {isa = PBXBuildFile; fileRef = CDC677D3396658BAD93EE2A013434963 /* IPConstant.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6745B1258B7BB17856C34D80D666187E /* IPPacket.h in Headers */ = {isa = PBXBuildFile; fileRef = 31C73AFD6CAC45952B0DDFFE9E6435CF /* IPPacket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6A74D8D676B8277B336BE85FCAF885EA /* INetworkPacketParser-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 303A5C166872095ACFD3C96E03395F89 /* INetworkPacketParser-dummy.m */; };
+		7007DB71DB006715212BE93152DE3C70 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		750BF28EBEDF730F64FCED9BC298D812 /* Pods-INetworkPacketParser_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C105AD8BCA84032C72861CB95DE59246 /* Pods-INetworkPacketParser_Example-dummy.m */; };
+		76E2327ED35F8916A9BF7AFFFE7D5DBD /* INetworkPacketParser-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 177FD9295FF823668BA759E6BD17EB30 /* INetworkPacketParser-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7826D5299F6EEF3AE46D508250DC84AB /* IPUDPSegment.h in Headers */ = {isa = PBXBuildFile; fileRef = 53ED8ED7934BA413343FFCF6E0DE3564 /* IPUDPSegment.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		80082053981E3490625C36CE53EFD910 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */; };
+		84E5E6042238AF8A00B8A588 /* IPDNSUtil.h in Headers */ = {isa = PBXBuildFile; fileRef = 84E5E6022238AF8A00B8A588 /* IPDNSUtil.h */; };
+		84E5E6052238AF8A00B8A588 /* IPDNSUtil.c in Sources */ = {isa = PBXBuildFile; fileRef = 84E5E6032238AF8A00B8A588 /* IPDNSUtil.c */; };
+		8CA42D78691F7E8C158A572154CBE7E9 /* IPDNSMessage.h in Headers */ = {isa = PBXBuildFile; fileRef = E7A5ED5C8732094C5B5F766BB63669EE /* IPDNSMessage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C175F4B7DD75A61ED589C3867726D33B /* IPDNSProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 4284162457F67CF000F40632F7AB47FA /* IPDNSProtocol.m */; };
+		D61D1A171699231065BFDA9F1A31EF44 /* IPUDPSegment.m in Sources */ = {isa = PBXBuildFile; fileRef = FD867F1FCC7C37EE070380B4C30E657E /* IPUDPSegment.m */; };
+		E7D07A16B0CC48442C41BC19F68B23D7 /* IPPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 23110F0819E56576A4CD9A42C46C57C5 /* IPPacket.m */; };
+		F76A9D8720B892718F92775F94146705 /* Pods-INetworkPacketParser_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4C09159B5209A9045C85051519B9FC9 /* Pods-INetworkPacketParser_Tests-dummy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		37EB2608DA55E51A3D17B04403D9B845 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 283C846619A9A16057F933043255F554;
+			remoteInfo = INetworkPacketParser;
+		};
+		B5174B35A8FAADE544B6A1FA6A055B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 70623C5C2C968DDA9D0E313AAC3980CB;
+			remoteInfo = "Pods-INetworkPacketParser_Example";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0591BCC44E5FF29076ED11D2D6B894A1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		0963C908429F5583CE2EB4F4FEA9C61F /* Pods-INetworkPacketParser_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-INetworkPacketParser_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0A4E1A7FDF4C0EBA3EABE3EE4EC2DA9F /* Pods-INetworkPacketParser_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-INetworkPacketParser_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		0D2033CE8C4613599673326C7A592172 /* IPTCPSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IPTCPSegment.m; path = INetworkPacketParser/Classes/IPTCPSegment.m; sourceTree = "<group>"; };
+		12FED0C63480C44A88183C8AE821A22A /* Pods-INetworkPacketParser_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-INetworkPacketParser_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		177FD9295FF823668BA759E6BD17EB30 /* INetworkPacketParser-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INetworkPacketParser-umbrella.h"; sourceTree = "<group>"; };
+		23110F0819E56576A4CD9A42C46C57C5 /* IPPacket.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IPPacket.m; path = INetworkPacketParser/Classes/IPPacket.m; sourceTree = "<group>"; };
+		25093319C22AC9A14989E4492B9BC573 /* INetworkPacketParser.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = INetworkPacketParser.xcconfig; sourceTree = "<group>"; };
+		2D4C207B133F31EA21624BA740A44982 /* IPConstant.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IPConstant.m; path = INetworkPacketParser/Classes/IPConstant.m; sourceTree = "<group>"; };
+		303A5C166872095ACFD3C96E03395F89 /* INetworkPacketParser-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "INetworkPacketParser-dummy.m"; sourceTree = "<group>"; };
+		31C73AFD6CAC45952B0DDFFE9E6435CF /* IPPacket.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPPacket.h; path = INetworkPacketParser/Classes/IPPacket.h; sourceTree = "<group>"; };
+		3629C6612AA577D678D4B26B8E0F178F /* INetworkPacketParser-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "INetworkPacketParser-Info.plist"; sourceTree = "<group>"; };
+		423656BF09A8C6EDB9C5BFFFCA2B9299 /* Pods_INetworkPacketParser_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INetworkPacketParser_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		42751199E12CC484F88671653A5B659A /* INetworkPacketParser.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = INetworkPacketParser.modulemap; sourceTree = "<group>"; };
+		4284162457F67CF000F40632F7AB47FA /* IPDNSProtocol.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IPDNSProtocol.m; path = INetworkPacketParser/Classes/IPDNSProtocol.m; sourceTree = "<group>"; };
+		53ED8ED7934BA413343FFCF6E0DE3564 /* IPUDPSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPUDPSegment.h; path = INetworkPacketParser/Classes/IPUDPSegment.h; sourceTree = "<group>"; };
+		554867AC57758A3DF36292B56D2959FC /* Pods-INetworkPacketParser_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-INetworkPacketParser_Tests.modulemap"; sourceTree = "<group>"; };
+		57166616A33E29B2802747CD8418F30E /* Pods-INetworkPacketParser_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-INetworkPacketParser_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		663818AF23F47B533650784A95AD6212 /* Pods-INetworkPacketParser_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-INetworkPacketParser_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		729B9ED6AEACDEE8DD17643043D14539 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		72A3EF397397427B4CCD021255BFAE49 /* Pods-INetworkPacketParser_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-INetworkPacketParser_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		801B0EE0C8FAABC06664FEEE56CBAFCA /* IPDNSMessage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IPDNSMessage.m; path = INetworkPacketParser/Classes/IPDNSMessage.m; sourceTree = "<group>"; };
+		845822CD8FA232023B4BFE0478F23312 /* Pods-INetworkPacketParser_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-INetworkPacketParser_Tests-umbrella.h"; sourceTree = "<group>"; };
+		84AE45B1A2AEBC0434E35E3B46741F0A /* INetworkPacketParser.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = INetworkPacketParser.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		84E5E6022238AF8A00B8A588 /* IPDNSUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = IPDNSUtil.h; path = INetworkPacketParser/Classes/IPDNSUtil.h; sourceTree = "<group>"; };
+		84E5E6032238AF8A00B8A588 /* IPDNSUtil.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = IPDNSUtil.c; path = INetworkPacketParser/Classes/IPDNSUtil.c; sourceTree = "<group>"; };
+		9E4BCD71201027660BA19C72C6AB61F0 /* IPTCPSegment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPTCPSegment.h; path = INetworkPacketParser/Classes/IPTCPSegment.h; sourceTree = "<group>"; };
+		9FB2E8A4E54A21241F9F95DCEB0E23A6 /* INetworkPacketParser-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "INetworkPacketParser-prefix.pch"; sourceTree = "<group>"; };
+		A52E8AE7DA3D09C91B5FA132D5B6C594 /* Pods-INetworkPacketParser_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-INetworkPacketParser_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC684DF11D7EE6F37DE7AD18AB5B3A80 /* Pods-INetworkPacketParser_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-INetworkPacketParser_Example.release.xcconfig"; sourceTree = "<group>"; };
+		C010DB43E47CEF42ECC28EB4F557098C /* Pods-INetworkPacketParser_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-INetworkPacketParser_Tests-Info.plist"; sourceTree = "<group>"; };
+		C105AD8BCA84032C72861CB95DE59246 /* Pods-INetworkPacketParser_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-INetworkPacketParser_Example-dummy.m"; sourceTree = "<group>"; };
+		CBA2D191B8FEF874896D976DE255FE85 /* Pods-INetworkPacketParser_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-INetworkPacketParser_Example-frameworks.sh"; sourceTree = "<group>"; };
+		CDC677D3396658BAD93EE2A013434963 /* IPConstant.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPConstant.h; path = INetworkPacketParser/Classes/IPConstant.h; sourceTree = "<group>"; };
+		D1006C93FA8F8EF8EB7E0E99170B77E0 /* INetworkPacketParser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = INetworkPacketParser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D9E3D4F2BE60CCF093AFE59C668664F5 /* Pods-INetworkPacketParser_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-INetworkPacketParser_Example-umbrella.h"; sourceTree = "<group>"; };
+		E29875212BC35CFB9C8715657CE56D4E /* Pods-INetworkPacketParser_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-INetworkPacketParser_Example-Info.plist"; sourceTree = "<group>"; };
+		E4C09159B5209A9045C85051519B9FC9 /* Pods-INetworkPacketParser_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-INetworkPacketParser_Tests-dummy.m"; sourceTree = "<group>"; };
+		E7A5ED5C8732094C5B5F766BB63669EE /* IPDNSMessage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPDNSMessage.h; path = INetworkPacketParser/Classes/IPDNSMessage.h; sourceTree = "<group>"; };
+		F3BAA90E7BFD5819E47049A1509CAE49 /* Pods-INetworkPacketParser_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-INetworkPacketParser_Example.modulemap"; sourceTree = "<group>"; };
+		F744FD82A209E9C1ABE1A5D13E051AC8 /* IPDNSProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = IPDNSProtocol.h; path = INetworkPacketParser/Classes/IPDNSProtocol.h; sourceTree = "<group>"; };
+		FD802920349FD76108A733E14061D59A /* Pods_INetworkPacketParser_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_INetworkPacketParser_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD867F1FCC7C37EE070380B4C30E657E /* IPUDPSegment.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = IPUDPSegment.m; path = INetworkPacketParser/Classes/IPUDPSegment.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06B54E3F261F0C9742289DFE1943BB19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7007DB71DB006715212BE93152DE3C70 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2CBE50043DB8EA2449B810B81B6FFDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DBFB2B2DB0CC5A7CB66A2501E0D853A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EB3530B176DC843B4F3847D96548F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				80082053981E3490625C36CE53EFD910 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07985850E8B5767E2C92CDF016E1D150 /* Pods-INetworkPacketParser_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				554867AC57758A3DF36292B56D2959FC /* Pods-INetworkPacketParser_Tests.modulemap */,
+				72A3EF397397427B4CCD021255BFAE49 /* Pods-INetworkPacketParser_Tests-acknowledgements.markdown */,
+				A52E8AE7DA3D09C91B5FA132D5B6C594 /* Pods-INetworkPacketParser_Tests-acknowledgements.plist */,
+				E4C09159B5209A9045C85051519B9FC9 /* Pods-INetworkPacketParser_Tests-dummy.m */,
+				C010DB43E47CEF42ECC28EB4F557098C /* Pods-INetworkPacketParser_Tests-Info.plist */,
+				845822CD8FA232023B4BFE0478F23312 /* Pods-INetworkPacketParser_Tests-umbrella.h */,
+				57166616A33E29B2802747CD8418F30E /* Pods-INetworkPacketParser_Tests.debug.xcconfig */,
+				663818AF23F47B533650784A95AD6212 /* Pods-INetworkPacketParser_Tests.release.xcconfig */,
+			);
+			name = "Pods-INetworkPacketParser_Tests";
+			path = "Target Support Files/Pods-INetworkPacketParser_Tests";
+			sourceTree = "<group>";
+		};
+		0DA1A652E15DAF0986E52A616E740F58 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C629D9B1188B51A2A4CE00EB7FCC4F97 /* INetworkPacketParser */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		44D5347904CF754D6785B84253F2574A /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				D6DFF15000AFE2A371BF499E7AFDA808 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		5E95F7BC6CC8C2206014C2456B340C85 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				84AE45B1A2AEBC0434E35E3B46741F0A /* INetworkPacketParser.podspec */,
+				0591BCC44E5FF29076ED11D2D6B894A1 /* LICENSE */,
+				729B9ED6AEACDEE8DD17643043D14539 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				B36AB396275697EEE1A5B13BA8A38FE3 /* Podfile */,
+				0DA1A652E15DAF0986E52A616E740F58 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				DD98577B6091ABCBF53ECD84A062AD55 /* Products */,
+				A9621F69987A0EF589CDD7734BAF266E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A9621F69987A0EF589CDD7734BAF266E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABC1E8D6DDF12A05BAD3C5D202FC2565 /* Pods-INetworkPacketParser_Example */,
+				07985850E8B5767E2C92CDF016E1D150 /* Pods-INetworkPacketParser_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		ABC1E8D6DDF12A05BAD3C5D202FC2565 /* Pods-INetworkPacketParser_Example */ = {
+			isa = PBXGroup;
+			children = (
+				F3BAA90E7BFD5819E47049A1509CAE49 /* Pods-INetworkPacketParser_Example.modulemap */,
+				0A4E1A7FDF4C0EBA3EABE3EE4EC2DA9F /* Pods-INetworkPacketParser_Example-acknowledgements.markdown */,
+				0963C908429F5583CE2EB4F4FEA9C61F /* Pods-INetworkPacketParser_Example-acknowledgements.plist */,
+				C105AD8BCA84032C72861CB95DE59246 /* Pods-INetworkPacketParser_Example-dummy.m */,
+				CBA2D191B8FEF874896D976DE255FE85 /* Pods-INetworkPacketParser_Example-frameworks.sh */,
+				E29875212BC35CFB9C8715657CE56D4E /* Pods-INetworkPacketParser_Example-Info.plist */,
+				D9E3D4F2BE60CCF093AFE59C668664F5 /* Pods-INetworkPacketParser_Example-umbrella.h */,
+				12FED0C63480C44A88183C8AE821A22A /* Pods-INetworkPacketParser_Example.debug.xcconfig */,
+				BC684DF11D7EE6F37DE7AD18AB5B3A80 /* Pods-INetworkPacketParser_Example.release.xcconfig */,
+			);
+			name = "Pods-INetworkPacketParser_Example";
+			path = "Target Support Files/Pods-INetworkPacketParser_Example";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44D5347904CF754D6785B84253F2574A /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C629D9B1188B51A2A4CE00EB7FCC4F97 /* INetworkPacketParser */ = {
+			isa = PBXGroup;
+			children = (
+				CDC677D3396658BAD93EE2A013434963 /* IPConstant.h */,
+				2D4C207B133F31EA21624BA740A44982 /* IPConstant.m */,
+				E7A5ED5C8732094C5B5F766BB63669EE /* IPDNSMessage.h */,
+				801B0EE0C8FAABC06664FEEE56CBAFCA /* IPDNSMessage.m */,
+				F744FD82A209E9C1ABE1A5D13E051AC8 /* IPDNSProtocol.h */,
+				4284162457F67CF000F40632F7AB47FA /* IPDNSProtocol.m */,
+				31C73AFD6CAC45952B0DDFFE9E6435CF /* IPPacket.h */,
+				23110F0819E56576A4CD9A42C46C57C5 /* IPPacket.m */,
+				9E4BCD71201027660BA19C72C6AB61F0 /* IPTCPSegment.h */,
+				0D2033CE8C4613599673326C7A592172 /* IPTCPSegment.m */,
+				53ED8ED7934BA413343FFCF6E0DE3564 /* IPUDPSegment.h */,
+				FD867F1FCC7C37EE070380B4C30E657E /* IPUDPSegment.m */,
+				84E5E6022238AF8A00B8A588 /* IPDNSUtil.h */,
+				84E5E6032238AF8A00B8A588 /* IPDNSUtil.c */,
+				5E95F7BC6CC8C2206014C2456B340C85 /* Pod */,
+				EAFB5297D5FA5B9E00523A70ECBC3AC9 /* Support Files */,
+			);
+			name = INetworkPacketParser;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DD98577B6091ABCBF53ECD84A062AD55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1006C93FA8F8EF8EB7E0E99170B77E0 /* INetworkPacketParser.framework */,
+				FD802920349FD76108A733E14061D59A /* Pods_INetworkPacketParser_Example.framework */,
+				423656BF09A8C6EDB9C5BFFFCA2B9299 /* Pods_INetworkPacketParser_Tests.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EAFB5297D5FA5B9E00523A70ECBC3AC9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				42751199E12CC484F88671653A5B659A /* INetworkPacketParser.modulemap */,
+				25093319C22AC9A14989E4492B9BC573 /* INetworkPacketParser.xcconfig */,
+				303A5C166872095ACFD3C96E03395F89 /* INetworkPacketParser-dummy.m */,
+				3629C6612AA577D678D4B26B8E0F178F /* INetworkPacketParser-Info.plist */,
+				9FB2E8A4E54A21241F9F95DCEB0E23A6 /* INetworkPacketParser-prefix.pch */,
+				177FD9295FF823668BA759E6BD17EB30 /* INetworkPacketParser-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/INetworkPacketParser";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		0CE6B970521CE8057058F74AB00CD2E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D1A7A70D98EE0DCEB25DAAC51DDAFC2 /* Pods-INetworkPacketParser_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE96AC09754214ECF36221B75707E7FB /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				04F7B47D24B112EB695FF9A6D5838BAB /* Pods-INetworkPacketParser_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12B462346AACE742F85DC2AC4FB10A1 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76E2327ED35F8916A9BF7AFFFE7D5DBD /* INetworkPacketParser-umbrella.h in Headers */,
+				3F4A9C8682725C54CAC0157293D751D4 /* IPConstant.h in Headers */,
+				8CA42D78691F7E8C158A572154CBE7E9 /* IPDNSMessage.h in Headers */,
+				2803E3B37E89116BF8429312634A4578 /* IPDNSProtocol.h in Headers */,
+				6745B1258B7BB17856C34D80D666187E /* IPPacket.h in Headers */,
+				84E5E6042238AF8A00B8A588 /* IPDNSUtil.h in Headers */,
+				2B2D5D1868E8BC734B831594F92D4360 /* IPTCPSegment.h in Headers */,
+				7826D5299F6EEF3AE46D508250DC84AB /* IPUDPSegment.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		283C846619A9A16057F933043255F554 /* INetworkPacketParser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 95F2CA50C327E36B164ED830DAA1CF41 /* Build configuration list for PBXNativeTarget "INetworkPacketParser" */;
+			buildPhases = (
+				E12B462346AACE742F85DC2AC4FB10A1 /* Headers */,
+				CF095E2A6C876E10853C5B6FF141F0AE /* Sources */,
+				06B54E3F261F0C9742289DFE1943BB19 /* Frameworks */,
+				02C80A345207EFCE3BA484E0DF48633A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = INetworkPacketParser;
+			productName = INetworkPacketParser;
+			productReference = D1006C93FA8F8EF8EB7E0E99170B77E0 /* INetworkPacketParser.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		70623C5C2C968DDA9D0E313AAC3980CB /* Pods-INetworkPacketParser_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4152E2912BE052FC0C8D0C32179BD6BD /* Build configuration list for PBXNativeTarget "Pods-INetworkPacketParser_Example" */;
+			buildPhases = (
+				DE96AC09754214ECF36221B75707E7FB /* Headers */,
+				16B89762986299F2F0B24677DEC4DD99 /* Sources */,
+				C4EB3530B176DC843B4F3847D96548F5 /* Frameworks */,
+				E947AFB40A9A362EAC0ECF302FD8D292 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C889FAB3499ED48FB9F3CA80F1695CBF /* PBXTargetDependency */,
+			);
+			name = "Pods-INetworkPacketParser_Example";
+			productName = "Pods-INetworkPacketParser_Example";
+			productReference = FD802920349FD76108A733E14061D59A /* Pods_INetworkPacketParser_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D5B38481F8C4CD773EA60EF771ECE61B /* Pods-INetworkPacketParser_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2681F7F7093AB4E0B1CD6CC43534B016 /* Build configuration list for PBXNativeTarget "Pods-INetworkPacketParser_Tests" */;
+			buildPhases = (
+				0CE6B970521CE8057058F74AB00CD2E4 /* Headers */,
+				0289AE099EFACDBC3B095C586335EC6E /* Sources */,
+				2CBE50043DB8EA2449B810B81B6FFDCE /* Frameworks */,
+				2A7DEBD9C6BD80843F54F49AC3B43700 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9EC0086C3B4B37AB5C3F8738D5C82BBA /* PBXTargetDependency */,
+			);
+			name = "Pods-INetworkPacketParser_Tests";
+			productName = "Pods-INetworkPacketParser_Tests";
+			productReference = 423656BF09A8C6EDB9C5BFFFCA2B9299 /* Pods_INetworkPacketParser_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = DD98577B6091ABCBF53ECD84A062AD55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				283C846619A9A16057F933043255F554 /* INetworkPacketParser */,
+				70623C5C2C968DDA9D0E313AAC3980CB /* Pods-INetworkPacketParser_Example */,
+				D5B38481F8C4CD773EA60EF771ECE61B /* Pods-INetworkPacketParser_Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		02C80A345207EFCE3BA484E0DF48633A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2A7DEBD9C6BD80843F54F49AC3B43700 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E947AFB40A9A362EAC0ECF302FD8D292 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0289AE099EFACDBC3B095C586335EC6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F76A9D8720B892718F92775F94146705 /* Pods-INetworkPacketParser_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		16B89762986299F2F0B24677DEC4DD99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750BF28EBEDF730F64FCED9BC298D812 /* Pods-INetworkPacketParser_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF095E2A6C876E10853C5B6FF141F0AE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				84E5E6052238AF8A00B8A588 /* IPDNSUtil.c in Sources */,
+				6A74D8D676B8277B336BE85FCAF885EA /* INetworkPacketParser-dummy.m in Sources */,
+				38E185C9E520A532AD7F5C4FB11068BE /* IPConstant.m in Sources */,
+				133CB0320758DB4BE8FD98E3ECF79845 /* IPDNSMessage.m in Sources */,
+				C175F4B7DD75A61ED589C3867726D33B /* IPDNSProtocol.m in Sources */,
+				E7D07A16B0CC48442C41BC19F68B23D7 /* IPPacket.m in Sources */,
+				3C71D5737D8360EE58C75213A54C1426 /* IPTCPSegment.m in Sources */,
+				D61D1A171699231065BFDA9F1A31EF44 /* IPUDPSegment.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9EC0086C3B4B37AB5C3F8738D5C82BBA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-INetworkPacketParser_Example";
+			target = 70623C5C2C968DDA9D0E313AAC3980CB /* Pods-INetworkPacketParser_Example */;
+			targetProxy = B5174B35A8FAADE544B6A1FA6A055B30 /* PBXContainerItemProxy */;
+		};
+		C889FAB3499ED48FB9F3CA80F1695CBF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = INetworkPacketParser;
+			target = 283C846619A9A16057F933043255F554 /* INetworkPacketParser */;
+			targetProxy = 37EB2608DA55E51A3D17B04403D9B845 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		388F2E8C51F15EEBF345AB276676AABC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 663818AF23F47B533650784A95AD6212 /* Pods-INetworkPacketParser_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-INetworkPacketParser_Tests/Pods-INetworkPacketParser_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-INetworkPacketParser_Tests/Pods-INetworkPacketParser_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3E89F7F6B52DC416E3CD953EA629F091 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25093319C22AC9A14989E4492B9BC573 /* INetworkPacketParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/INetworkPacketParser/INetworkPacketParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/INetworkPacketParser/INetworkPacketParser-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/INetworkPacketParser/INetworkPacketParser.modulemap";
+				PRODUCT_MODULE_NAME = INetworkPacketParser;
+				PRODUCT_NAME = INetworkPacketParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3F88D2475EF55E66D5084A6285AB7ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12FED0C63480C44A88183C8AE821A22A /* Pods-INetworkPacketParser_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-INetworkPacketParser_Example/Pods-INetworkPacketParser_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-INetworkPacketParser_Example/Pods-INetworkPacketParser_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		823161E9EB1F256D6EEA885798BB0B31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25093319C22AC9A14989E4492B9BC573 /* INetworkPacketParser.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/INetworkPacketParser/INetworkPacketParser-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/INetworkPacketParser/INetworkPacketParser-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/INetworkPacketParser/INetworkPacketParser.modulemap";
+				PRODUCT_MODULE_NAME = INetworkPacketParser;
+				PRODUCT_NAME = INetworkPacketParser;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		83ABF412B37EE20824E4FE622BA20B6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC684DF11D7EE6F37DE7AD18AB5B3A80 /* Pods-INetworkPacketParser_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-INetworkPacketParser_Example/Pods-INetworkPacketParser_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-INetworkPacketParser_Example/Pods-INetworkPacketParser_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		BE01AF5D395AE305A54D518A9B774D2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.2;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		FB805EDF200267D00960C6A235382368 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 57166616A33E29B2802747CD8418F30E /* Pods-INetworkPacketParser_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-INetworkPacketParser_Tests/Pods-INetworkPacketParser_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-INetworkPacketParser_Tests/Pods-INetworkPacketParser_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2681F7F7093AB4E0B1CD6CC43534B016 /* Build configuration list for PBXNativeTarget "Pods-INetworkPacketParser_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB805EDF200267D00960C6A235382368 /* Debug */,
+				388F2E8C51F15EEBF345AB276676AABC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFC8DEA7B5326676BA33093221AAE4F4 /* Debug */,
+				BE01AF5D395AE305A54D518A9B774D2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4152E2912BE052FC0C8D0C32179BD6BD /* Build configuration list for PBXNativeTarget "Pods-INetworkPacketParser_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3F88D2475EF55E66D5084A6285AB7ED6 /* Debug */,
+				83ABF412B37EE20824E4FE622BA20B6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		95F2CA50C327E36B164ED830DAA1CF41 /* Build configuration list for PBXNativeTarget "INetworkPacketParser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				823161E9EB1F256D6EEA885798BB0B31 /* Debug */,
+				3E89F7F6B52DC416E3CD953EA629F091 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
