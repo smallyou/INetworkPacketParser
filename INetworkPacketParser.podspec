@@ -9,9 +9,11 @@
 Pod::Spec.new do |s|
   s.name             = 'INetworkPacketParser'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of INetworkPacketParser.'
+  s.summary          = 'ip packet, tcp, udp and dns parser'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+1. support ip pacekt parser
+2. support tcp / udp parser
+3. support dns parser
                        DESC
 
   s.homepage         = 'https://github.com/smallyou/INetworkPacketParser'
